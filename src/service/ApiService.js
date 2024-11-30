@@ -50,7 +50,7 @@ export function call(api, method, request) {
       if (response.status === 200) {
         return response.json();
       } else if (response.status === 403) {
-        //window.location.href = "/login";
+        window.location.href = "/login";
       } else {
         new Error(response);
       }
